@@ -1,0 +1,79 @@
+.row-theme-headers {
+  background-color: var(--wigram-blue-1);
+  display: grid;
+  grid-template-columns: 86px repeat(var(--filters-applied-count), 370px) 70px; // 150px (date cell), 70px (add cell)
+  padding: 0px 60px 0px 0px; // gutters
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  .header-wrapper {
+    position: relative;
+    z-index: 2;
+
+    .header-cell {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 86px;
+      border-right: 1px solid #191d2b;
+      padding: 0 0.5rem 0 1rem;
+
+      h1 {
+        cursor: pointer;
+        margin: 0px;
+        letter-spacing: -1px;
+        color: var(--wigram-green-primary);
+        font-size: 24px;
+        font-weight: bold;
+
+        .svg-wrapper {
+          margin-left: 10px;
+          position: relative;
+        }
+
+        svg {
+          position: absolute;
+          top: 6px;
+          width: 12px;
+          transform: rotate(180deg);
+        }
+      }
+
+      .icons {
+        display: flex;
+        position: relative;
+
+        .filter-count {
+          font-family: Avenir;
+          position: absolute;
+          top: 2px;
+          right: 2px;
+          letter-spacing: 1px;
+          background-color: #c26a39;
+          font-size: 9px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 18px;
+          color: var(--wigram-grey-0);
+          width: 18px;
+          height: 18px;
+          border-radius: 9px;
+        }
+      }
+
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .add-cell {
+    margin-top: 18px;
+    display: flex;
+    justify-content: flex-end;
+    svg {
+      cursor: pointer;
+    }
+  }
+}

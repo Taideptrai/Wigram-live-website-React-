@@ -1,0 +1,45 @@
+.lf-section {
+  background-color: white;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+
+  &.grey-bg {
+    background-color: #edece9;
+  }
+}
+
+.meta-data {
+  .small-heading {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .text {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+}
+
+.chart-wrapper {
+  height: 100%;
+  padding-top: 150px;
+  padding-left: 250px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+
+.btn-next-section {
+  position: fixed;
+  cursor: pointer;
+  z-index: 200;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  right: 30px;
+}

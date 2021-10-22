@@ -1,0 +1,20 @@
+.country-packs-page {
+  background-color: #e3e2de;
+  min-height: 100%;
+  min-height: 100vh;
+
+  .column {
+    padding: 1.5rem;
+  }
+
+  .country-name {
+    font-size: 40px;
+    letter-spacing: 0px;
+    margin-bottom: 0.5rem;
+    color: var(--wigram-grey-0);
+  }
+
+  button {
+    font-size: 18px;
+  }
+}

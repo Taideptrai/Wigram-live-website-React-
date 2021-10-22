@@ -1,0 +1,32 @@
+.outer-wrapper {
+  position: absolute;
+  left: 150px;
+  top: 394px;
+}
+
+.fixed {
+  position: fixed;
+  top: 190px;
+  left: 150px;
+  z-index: 100;
+}
+
+.wrapper {
+  z-index: 200;
+  position: sticky;
+  position: -webkit-sticky; // Safari
+  align-self: start; // required for sticky to work
+  top: 100px;
+
+  //left: 86px;
+
+  div {
+    font-size: 1.125rem;
+    color: #aaaaaa;
+    line-height: 34px;
+    cursor: pointer;
+    &.active {
+      color: var(--wigram-grey-0);
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.player-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.controls-wrapper {
+  //visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  //background: rgba(0,0,0, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 1000;
+};
+
+.controls-wrapper-mobile {
+  //visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  //background: rgba(0,0,0, 0.6);
+  z-index: 1000;
+};
+
+.ui-video-seek-slider .track .main .connect {
+  background-color: rgb(74, 168, 66) !important;
+}
+
+.ui-video-seek-slider .thumb .handler {
+  background-color: rgb(74, 168, 66) !important;
+}
+
+.slider-wrapper {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  height: 100px;
+}
+
+.slider {
+  height: 100%;
+}
+
+.process-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.overlay-video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-image {
+  position: relative;
+  /* Add the blur effect */
+  backdrop-filter: blur(100px);
+  //-webkit-filter: blur(100px);
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.bg-image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(100px); /* apply the blur */
+  pointer-events: none; /* make the overlay click-through */
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 2;
+  width: 50vw;
+}
+
+.time-text {
+  font-family: 'Avenir';
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 3px;
+  @media only screen and (min-width: 768px) {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 0;
+  }
+}
+
+//.player-wrapper {
+//  width: auto; // Reset width
+//  height: auto; // Reset height
+//}
+//.react-player {
+//  padding-top: 56.25%; // Percentage ratio for 16:9
+//  position: relative; // Set to relative
+//}
+//
+//.react-player > div {
+//  position: absolute; // Scaling will occur since parent is relative now
+//}

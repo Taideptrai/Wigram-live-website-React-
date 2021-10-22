@@ -1,0 +1,69 @@
+{
+  "id": 12,
+  "title": "Net financing of urban investment bonds, or quasi municipal bonds, turned negative in May for the first time in three years.",
+  "description": null,
+  "published_at": "2021-06-16T03:18:38.398Z",
+  "created_at": "2021-06-16T03:18:36.451Z",
+  "updated_at": "2021-06-24T21:42:43.954Z",
+  "author": {
+    "id": 3,
+    "name": "Wigram Research",
+    "created_at": "2021-06-16T01:21:45.742Z",
+    "updated_at": "2021-06-16T01:21:45.749Z"
+  },
+  "detail": "Net financing of urban investment bonds, or quasi municipal bonds, turned negative in May for the first time in three years, Caixin reported on June 2. The bonds are linked to debt raised by local government financing vehicles (LGFV).\n\nLocal governments have preferred to issue special purpose bonds (SPB), as the finance ministry is pushing for them to hit the yearly quota figures, the article said.\n\nHowever, SPB issuance has been slower than expected as the finance ministry now calls for stricter supervision of special projects, Caixin said in a separate article. The volume of SPB issuance for the first five months of the year is less than 20% of the yearly limit. The issuance is expected to pick up from June to September, analysts told Caixin.\n\nComment: The decline across these categories is part with the clampdown on the quasi-government / shadow-banking system that thrived during the mid-2010s. On the whole though, local governments are showing that they can adapt to the new regulations. Net government bond issuance is tracking at 5.1% of GDP in 2Q so far, up from 1Q, while land sales hit a record high in May.",
+  "date": "2021-06-04T00:00:00.000Z",
+  "type": "news",
+  "slug": "net-financing-of-urban-investment-bonds-or-quasi-municipal-bonds-turned-negative-in-may-for-the-first-time-in-three-years",
+  "image": {
+    "id": 27,
+    "name": "Screen Shot 2021-06-25 at 7.40.53 am.png",
+    "alternativeText": "",
+    "caption": "",
+    "width": 1824,
+    "height": 1258,
+    "formats": {
+      "thumbnail": {
+        "ext": ".png",
+        "url": "https://wigram-web-assets.s3.ap-southeast-2.amazonaws.com/thumbnail_Screen_Shot_2021_06_25_at_7_40_53_am_5ef5d4c604.png",
+        "hash": "thumbnail_Screen_Shot_2021_06_25_at_7_40_53_am_5ef5d4c604",
+        "mime": "image/png",
+        "name": "thumbnail_Screen Shot 2021-06-25 at 7.40.53 am.png",
+        "path": null,
+        "size": 15.87,
+        "width": 226,
+        "height": 156
+      }
+    },
+    "hash": "Screen_Shot_2021_06_25_at_7_40_53_am_5ef5d4c604",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 486.38,
+    "url": "https://wigram-web-assets.s3.ap-southeast-2.amazonaws.com/Screen_Shot_2021_06_25_at_7_40_53_am_5ef5d4c604.png",
+    "previewUrl": null,
+    "provider": "aws-s3",
+    "provider_metadata": null,
+    "created_at": "2021-06-24T21:42:37.174Z",
+    "updated_at": "2021-06-24T21:42:37.194Z"
+  },
+  "video": null,
+  "charts": [],
+  "countries": [
+    {
+      "id": 1,
+      "name": "China",
+      "created_at": "2021-06-15T06:29:15.776Z",
+      "updated_at": "2021-06-15T06:29:15.897Z"
+    }
+  ],
+  "tags": [
+    {
+      "id": 5,
+      "name": "Financial Risk",
+      "created_at": "2021-06-16T01:27:55.250Z",
+      "updated_at": "2021-06-21T04:25:34.871Z",
+      "order": 5
+    }
+  ],
+  "longforms": []
+}

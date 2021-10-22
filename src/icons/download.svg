@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>download</title>
+    <desc>Created with Sketch.</desc>
+    <g id="download" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(11.000000, 8.000000)" fill="#333333">
+            <rect id="Rectangle" fill-rule="nonzero" transform="translate(10.500200, 11.000000) rotate(-90.000000) translate(-10.500200, -11.000000) " x="-0.4998" y="10" width="22" height="2"></rect>
+            <polygon id="Path" points="0 12.5002 9.1924 21.6926 10.6066 23.1068 12.0208 21.6926 21.2132 12.5002 19.799 11.086 10.6066 20.2784 1.4142 11.086"></polygon>
+            <rect id="Rectangle" fill-rule="nonzero" transform="translate(10.500000, 26.946800) rotate(-180.000000) translate(-10.500000, -26.946800) " x="7.10542736e-15" y="25.9468" width="21" height="2"></rect>
+        </g>
+    </g>
+</svg>

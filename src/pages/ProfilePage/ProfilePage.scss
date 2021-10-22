@@ -1,0 +1,22 @@
+.profile-page {
+  background-color: #e3e2de;
+  min-height: 100vh;
+
+  input {
+    background-color: var(--side-nav-background-color);
+    border-color: var(--side-nav-background-color);
+  }
+  button {
+    width: 193px;
+    text-align: center;
+  }
+
+  .form-section {
+    margin-bottom: 2rem;
+  }
+
+  hr {
+    margin: 0.7rem 0 1.5rem;
+    border: 0.5px solid #ccc;
+  }
+}

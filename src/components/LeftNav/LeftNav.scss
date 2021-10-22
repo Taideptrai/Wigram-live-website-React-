@@ -1,0 +1,27 @@
+.left-nav {
+  background-color: var(--side-nav-background-color);
+  box-shadow: inset -3px 0px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 86px;
+  height: 100%;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  svg {
+    cursor: pointer;
+    width: 32px;
+    display: block;
+  }
+
+  .back-icon {
+    margin-top: 10px;
+  }
+
+  .icon-set {
+    padding-bottom: 24px;
+  }
+}

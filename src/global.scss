@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'AntoniaH1';
+  src: url('./fonts/AntoniaH1-Regular.woff2');
+
+  font-family: 'AntoniaH2';
+  src: url('./fonts/AntoniaH2-Regular.woff2');
+
+  font-family: 'AntoniaH3';
+  src: url('./fonts/AntoniaH3-Regular.woff2');
+
+  font-family: 'AntoniaText';
+  src: url('./fonts/AntoniaText-Regular.woff2');
+}
+
+// Customise Bulma variables to match Wigram theme
+$input-background-color: #f1f1f1;
+$input-border-color: #f1f1f1;
+$input-placeholder-color: #555555;
+$input-focus-border-color: #777;
+$input-focus-box-shadow-color: #ccc;
+
+$radius: 0px;
+$input-radius: 2px;
+$family-primary: AntoniaText;
+
+// Box
+$box-radius: 0px;
+$box-shadow: 0px;
+
+// Import Bulma styles and use above variables
+@import './node_modules/bulma/bulma.sass';
+
+.input {
+  height: 3rem;
+}
+
+.link-underlined {
+  border-bottom: 1px solid #000;
+  color: #333;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Prevent overscroll - https://stackoverflow.com/questions/12046315/prevent-overscrolling-of-web-page
+html {
+  overflow: auto; // Adjusting the 'overflow' property may cause the scroll events to not fire.
+  height: 100%;
+  overscroll-behavior: none; // Prevent over scrolling page with mouse wheel
+}
+
+body,
+.page,
+#__next,
+#root,
+.App {
+  // #root is used by storybook
+  height: 100%;
+}
+
+body {
+  display: inline-block; // allows the body container to expand beyond 100% width of the screen
+  min-width: 100%;
+
+  background-color: var(--wigram-blue-1);
+  font-family: 'AntoniaText', georgia, serif;
+  font-size: 14px;
+  color: var(--wigram-grey-0);
+
+  h1 {
+    font-family: 'AntoniaH1', georgia, serif;
+    font-size: 60px;
+    line-height: 110%;
+  }
+
+  h2 {
+    font-family: 'AntoniaH2', georgia, serif;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  h3 {
+    font-family: 'AntoniaH3', georgia, serif;
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  p {
+    font-size: 1rem;
+    font-family: 'AntoniaText', georgia, serif;
+    line-height: 1.8rem;
+    padding-bottom: 2.5rem;
+    white-space: pre-wrap; // maintains line breaks set in CMS
+  }
+}
+
+//
+// Amazon Amplify Auth Styles
+//
+
+:root {
+  --amplify-primary-color: #333333;
+  --amplify-primary-tint: #000000;
+  --amplify-primary-shade: #000000;
+}
+
+amplify-authenticator {
+  background-image: url('./images/login-background.jpg');
+  width: 100%;
+}
+
+amplify-sign-in {
+  background-color: pink;
+}
+
+// Grid layout
+
+// 12 columns grid
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 30px;
+  padding: 0px 60px; // gutters
+  grid-template-areas: '. l l c c c c c c . r r';
+
+  .grid-left {
+    grid-area: l;
+  }
+  .grid-center {
+    grid-area: c;
+  }
+  .grid-right {
+    grid-area: r;
+  }
+}
+
+// Backgrounds
+.dark-bg {
+  background-color: #02060a26;
+}
+
+.fullpage-section {
+  .extra-padding {
+    padding-top: 8rem;
+    padding-bottom: 14rem;
+  }
+}
+
+.group {
+  margin-top: 5rem;
+}
+
+// Custom Colors
+:root {
+  --wigram-green-0: #3f8f39; // Green 4
+  --wigram-green-1: #4aa842; // Green 5 (primary)
+  --wigram-green-primary: var(--wigram-green-1);
+  --wigram-green-2: #58bf4f; // Green 6
+  --wigram-green-3: #e3efdd; // Green 8
+  --wigram-green-text-disabled: #1f5e1a; // Displayed at 0.5 opacity. 1 opacity color = #42843C;
+  --wigram-green-text-disabled-2: #42843c;
+
+  --wigram-grey-0: #222222; // Grey 2
+  --wigram-grey-1: #444444; // Grey 3
+  --wigram-grey-2: #666666; // Grey 4
+  --wigram-grey-3: #999999; // Grey 5
+  --wigram-grey-4: #aaaaaa; // Grey 6
+  --wigram-grey-5: #eeeeee; // Grey 8
+  --wigram-grey-6: #f7f7f9; // Grey 9
+  --wigram-grey-7: #fafafa; // Grey 10
+
+  --wigram-blue-1: #18212d;
+  --wigram-blue-2: #1c2633;
+  --wigram-blue-3: #233246;
+  --wigram-blue-text: #527392;
+  --wigram-blue-hyperlink: #5b85d7;
+
+  // Amplify
+  --amplify-primary-color: var(--wigram-green-primary);
+  --amplify-primary-contrast: var(--wigram-grey-0);
+  --amplify-font-family: 'AntoniaText';
+  --amplify-primary-shade: var(--wigram-green-0);
+}
+
+amplify-container {
+  background-image: url('https://ik.imagekit.io/wigramdev/login_background_a42668c7dd.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+amplify-sign-in {
+  color: yellow;
+}
+
+// Slider styles (unscoped)
+
+.splide {
+  position: relative!important;
+  .splide__arrow{
+    &--prev, &--next{
+    position: fixed!important;
+    top: 95vh!important;
+    border:none!important;
+    background-color: transparent;
+    }
+    &--prev{
+      left: 92%!important;
+    }
+    &--next{
+      left: 95%!important;
+    }
+    svg {
+      filter: invert(1);
+      width: 14.9px;
+      height: 14.55px;
+    }
+  }
+  .splide__arrow--next{
+    right: 3%!important;
+  }
+  .splide__arrow:disabled {
+    opacity: 40%;
+    pointer-events: none;
+  }
+}
+
+
+// Allows for a 50px channel/gap that can be used for the side navigation
+.with-side-nav {
+  margin-left: 86px !important;
+}
+
+.display-inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.display-inline-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}

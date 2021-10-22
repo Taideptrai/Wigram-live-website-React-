@@ -1,0 +1,136 @@
+.longforms-page {
+  background-color: var(--wigram-blue-1);
+  overflow: hidden;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+
+  .section {
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    .hidden {
+      display: none;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 187px;
+      color: #ffffff;
+      font-style: normal;
+      line-height: 140%;
+      transition: all 1s ease-in-out;
+      h2 {
+        font-family: Antonia H2;
+        font-weight: normal;
+        font-size: 60px;
+        max-width: 367px;
+        min-width: 300px;
+        margin-bottom: 10px;
+        margin-right: 30px;
+      }
+      p {
+        font-family: Avenir;
+        font-weight: normal;
+        font-size: 16px;
+        max-width: 307px;
+        width: fit-content;
+        min-width: 250px;
+      }
+    }
+    .splide {
+      .slide-element {
+        width: 300px !important;
+      }
+      .is-active {
+        width: 450px !important;
+        margin-left: auto !important;
+      }
+      transform: all 1s linear !important;
+    }
+    .splideFullWidth {
+      width: 100%;
+      display: flex;
+
+      .slide-element {
+        flex: 1;
+        transform: scale(0.95) !important;
+      }
+      .is-active {
+        transform: scale(1) !important;
+      }
+      transform: all 1s linear !important;
+    }
+    .splideHalfWidth {
+      .slide-element {
+        width: 342px !important;
+      }
+      width: calc(100% - 190px);
+      margin: 0 10px 0 180px;
+      .is-active {
+        width: 500px !important;
+      }
+      transform: all 1s linear !important;
+    }
+    .slide-element {
+      display: flex;
+      height: 400px;
+      flex-direction: column;
+      justify-content: center;
+      .slide-content {
+        height: 144.12px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          color: white;
+          font-size: 1.4rem;
+          text-align: center;
+        }
+        .slide-country {
+          font-family: Antonia H2;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12.6246px;
+          line-height: 110%;
+          text-align: center;
+          letter-spacing: 0.2em;
+          color: #ffffff;
+          width: 100%;
+          margin-bottom: 20.42px;
+          text-transform: uppercase;
+        }
+      }
+      .slide-date {
+        width: 100%;
+        position: absolute;
+        top: 370px;
+        font-family: Avenir;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10.6667px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.filter {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transform: scale(1.8);
+}
+.filter-dropdown {
+  width: 80vw !important;
+  height: 80vh;
+}

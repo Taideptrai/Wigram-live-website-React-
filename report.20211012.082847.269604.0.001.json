@@ -1,0 +1,438 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20211012.082847.269604.0.001.json",
+    "dumpEventTime": "2021-10-12T08:28:47Z",
+    "dumpEventTimeStamp": "1634016527885",
+    "processId": 269604,
+    "cwd": "C:\\Users\\Administrator\\live-website",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Administrator\\live-website\\node_modules\\react-scripts\\scripts\\build.js"
+    ],
+    "nodejsVersion": "v12.10.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.10.0",
+      "v8": "7.6.303.29-node.16",
+      "uv": "1.31.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.10.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "6.1.7601",
+    "osVersion": "Windows 7 Ultimate Service Pack 1",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-2620M CPU @ 2.70GHz",
+        "speed": 2693,
+        "user": 14710098,
+        "nice": 0,
+        "sys": 8098885,
+        "idle": 119154281,
+        "irq": 1076406
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2620M CPU @ 2.70GHz",
+        "speed": 2693,
+        "user": 6837726,
+        "nice": 0,
+        "sys": 1605609,
+        "idle": 133519524,
+        "irq": 17487
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2620M CPU @ 2.70GHz",
+        "speed": 2693,
+        "user": 10960973,
+        "nice": 0,
+        "sys": 3033579,
+        "idle": 127968228,
+        "irq": 42432
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-2620M CPU @ 2.70GHz",
+        "speed": 2693,
+        "user": 5803923,
+        "nice": 0,
+        "sys": 1691394,
+        "idle": 134467323,
+        "irq": 12292
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wireless Network Connection",
+        "internal": false,
+        "mac": "24:77:03:88:59:d0",
+        "address": "fe80::17c:7357:9eef:d8b1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "Wireless Network Connection",
+        "internal": false,
+        "mac": "24:77:03:88:59:d0",
+        "address": "192.168.1.69",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "may00"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000000013ff56eb9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x000000013ff5b24c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28172"
+    },
+    {
+      "pc": "0x000000013ff5a1f8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23992"
+    },
+    {
+      "pc": "0x00000001400463cb",
+      "symbol": "v8::base::CPU::has_sse+37563"
+    },
+    {
+      "pc": "0x000000014083976e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x0000000140821711",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00000001406ef1cc",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00000001406f866f",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1279"
+    },
+    {
+      "pc": "0x00000001406f6b54",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00000001406ec7a3",
+      "symbol": "v8::internal::Heap::CollectGarbage+1235"
+    },
+    {
+      "pc": "0x00000001406eb044",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x000000014070a855",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x00000001404793c3",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+3683"
+    },
+    {
+      "pc": "0x0000000140c5300d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+575565"
+    },
+    {
+      "pc": "0x0000039d29b2dd67",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2172133376,
+    "totalCommittedMemory": 2172133376,
+    "usedMemory": 2120010280,
+    "availableMemory": 43176736,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31432,
+        "available": 230400
+      },
+      "new_space": {
+        "memorySize": 9437184,
+        "committedMemory": 9437184,
+        "capacity": 4712976,
+        "used": 175696,
+        "available": 4537280
+      },
+      "old_space": {
+        "memorySize": 2094379008,
+        "committedMemory": 2094379008,
+        "capacity": 2061355472,
+        "used": 2053341312,
+        "available": 8014160
+      },
+      "code_space": {
+        "memorySize": 2260992,
+        "committedMemory": 2260992,
+        "capacity": 2009248,
+        "used": 2009248,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 4198400,
+        "committedMemory": 4198400,
+        "capacity": 3024800,
+        "used": 3024800,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 60973056,
+        "committedMemory": 60973056,
+        "capacity": 60877488,
+        "used": 60877488,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550304,
+        "used": 550304,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 4712976,
+        "used": 0,
+        "available": 4712976
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 170.259,
+    "kernelCpuSeconds": 2.964,
+    "cpuConsumptionPercent": 151.95,
+    "maxRss": 2342486016,
+    "pageFaults": {
+      "IORequired": 966891,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 5770,
+      "writes": 161
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    ".ionic": "C:\\Users\\Administrator\\.npm-global\\node_modules\\ionic\\node_modules\\.bin",
+    ".phonegap": "C:\\Users\\Administrator\\.npm-global\\node_modules\\phonegap\\node_modules\\.bin",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANDROID_NDK_PATH": "C:\\Program Files\\Android\\ndk\\android-ndk-r11c",
+    "APPDATA": "C:\\Users\\Administrator\\AppData\\Roaming",
+    "BABEL_ENV": "production",
+    "C:\\Users\\Administrator\\AppData\\Roaming\\npm": "%C:\\Users\\Administrator\\AppData\\Roaming\\npm%;C:\\Users\\Administrator\\AppData\\Roaming\\npm",
+    "C:\\Users\\YourUserName\\AppData\\Roaming\\npm": "C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;C:\\wamp\\bin\\php\\php5.6.19;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\AOMEI Backupper;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Windows\\System32;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Program Files\\Heroku\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Windows\\System32;C:\\Users\\Administ",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_248076_ONZJHCQPTRQFXYVQ",
+    "COLOR": "1",
+    "COLORTERM": "truecolor",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPOSE_CONVERT_WINDOWS_PATHS": "true",
+    "COMPUTERNAME": "MAY00",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "cordova": "C:\\Users\\Administrator\\.npm-global\\node_modules\\cordova\\bin",
+    "create-react-app": "C:\\Users\\Administrator\\.npm-global\\node_modules\\create-react-app\\node_modules\\.bin",
+    "create-react-app-new": "C:\\Users\\Administrator\\.npm-global\\node_modules\\create-react-app",
+    "EDITOR": "notepad.exe",
+    "ESLINT_NO_DEV_ERRORS": "true",
+    "firebaseandroid": "C:\\Program Files\\Java\\jre1.8.0_92\\bin",
+    "FP_NO_HOST_CHECK": "NO",
+    "GIT_ASKPASS": "c:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "globallnpm": "C:\\Users\\Administrator\\.npm-global",
+    "globalnpm": "C:\\Users\\Administrator\\.npm-global",
+    "HerokuPath": "C:\\Program Files (x86)\\Heroku",
+    "HOME": "C:\\Users\\Administrator",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Administrator",
+    "INIT_CWD": "C:\\Users\\Administrator\\live-website",
+    "ionic": "C:\\Users\\Administrator\\.npm-global\\node_modules\\ionic\\bin",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Administrator\\AppData\\Local",
+    "LOGONSERVER": "\\\\MAY00",
+    "mongodb": "C:\\Program Files\\MongoDB\\Server\\3.2",
+    "mongodbb": "C:\\Program Files\\MongoDB\\Server",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "nodemon": "C:\\Users\\Administrator\\.npm-global\\node_modules\\nodemon\\bin",
+    "nodemon new": "C:\\Users\\Administrator\\.npm-global\\node_modules\\nodemon\\node_modules\\.bin",
+    "nodemon new1": "C:\\Users\\Administrator\\.npm-global\\node_modules\\nodemon\\lib",
+    "NODE_ENV": "production",
+    "NODE_EXE": "C:\\Program Files\\nodejs\\\\node.exe",
+    "NODE_PATH": "",
+    "NODE_SKIP_PLATFORM_CHECK": "1",
+    "npm": "C:\\Program Files\\nodejs",
+    "npm module": "C:\\Users\\Administrator\\.npm-global\\node_modules",
+    "npmpath": "C:\\Program Files\\nodejs\\npm",
+    "NPM_CLI_JS": "C:\\users\\your_user\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js",
+    "npm_command": "run-script",
+    "npm_config_\"path": "C:\\ProgramData\\Oracle\\Java\\javapath",
+    "npm_config_cache": "C:\\Users\\Administrator\\AppData\\Local\\npm-cache",
+    "npm_config_globalconfig": "C:\\users\\your_user\\AppData\\Roaming\\npm\\etc\\npmrc",
+    "npm_config_global_prefix": "C:\\users\\your_user\\AppData\\Roaming\\npm",
+    "npm_config_init_module": "C:\\Users\\Administrator\\.npm-init.js",
+    "npm_config_local_prefix": "C:\\Users\\Administrator\\live-website",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_msvs_version": "2017",
+    "npm_config_node_gyp": "C:\\users\\your_user\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js",
+    "npm_config_noproxy": "",
+    "npm_config_prefix": "C:\\users\\your_user\\AppData\\Roaming\\npm",
+    "npm_config_userconfig": "C:\\Users\\Administrator\\.npmrc",
+    "npm_config_user_agent": "npm/7.24.0 node/v12.10.0 win32 x64 workspaces/false",
+    "npm_execpath": "C:\\users\\your_user\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js",
+    "npm_lifecycle_event": "build",
+    "npm_lifecycle_script": "react-scripts build",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_json": "C:\\Users\\Administrator\\live-website\\package.json",
+    "npm_package_name": "wigram-frontend",
+    "npm_package_version": "0.1.0",
+    "NPM_PREFIX_NPM_CLI_JS": "C:\\users\\your_user\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js",
+    "NUMBER_OF_PROCESSORS": "4",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "Path": "C:\\Users\\Administrator\\live-website\\node_modules\\.bin;C:\\Users\\Administrator\\node_modules\\.bin;C:\\Users\\node_modules\\.bin;C:\\node_modules\\.bin;C:\\users\\your_user\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\@npmcli\\run-script\\lib\\node-gyp-bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\Program Files\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;C:\\wamp\\bin\\php\\php5.6.19;C:\\Program Files (x86)\\AOMEI Backupper;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Program Files\\Git\\cmd;C:\\Windows\\System32;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin;C:\\Program Files\\Heroku\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Users\\Administrator\\AppData\\Roaming\\npm;C:\\Windows\\System32;C:\\Users\\Administ;C:\\Program Files\\nodejs\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "phonegap": "C:\\Users\\Administrator\\.npm-global\\node_modules\\phonegap\\bin",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 42 Stepping 7, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "2a07",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\Tools\\PowerShell\\Modules\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "react-create-app": "C:\\Users\\Administrator\\.npm-global\\node_modules\\create-react-app",
+    "reactnative": "C:\\Users\\Administrator\\.npm-global\\node_modules\\react-native-cli\\node_modules\\.bin",
+    "REACT_APP_API_URL": "https://api-dev.wigram.net:8443",
+    "REACT_APP_STRAPI_URL": "https://cms-dev.wigram.net",
+    "sails": "C:\\Users\\Administrator\\.npm-global\\node_modules\\sails\\bin",
+    "sailsnew": "C:\\Users\\Administrator\\.npm-global\\node_modules\\sails\\bin\\sails.js",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.50.1",
+    "TMP": "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "MAY00",
+    "USERNAME": "Administrator",
+    "USERPROFILE": "C:\\Users\\Administrator",
+    "VS110COMNTOOLS": "C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\Tools\\",
+    "VS120COMNTOOLS": "C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\Tools\\",
+    "VS140COMNTOOLS": "C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Program Files (x86)\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-f3fb8495cc-sock",
+    "windir": "C:\\Windows",
+    "_DFX_INSTALL_UNSIGNED_DRIVER": "1"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\system32\\kernel32.dll",
+    "C:\\Windows\\system32\\KERNELBASE.dll",
+    "C:\\Windows\\system32\\dbghelp.dll",
+    "C:\\Windows\\system32\\msvcrt.dll",
+    "C:\\Windows\\system32\\WS2_32.dll",
+    "C:\\Windows\\system32\\RPCRT4.dll",
+    "C:\\Windows\\system32\\NSI.dll",
+    "C:\\Windows\\system32\\ADVAPI32.dll",
+    "C:\\Windows\\SYSTEM32\\sechost.dll",
+    "C:\\Windows\\system32\\USER32.dll",
+    "C:\\Windows\\system32\\GDI32.dll",
+    "C:\\Windows\\system32\\LPK.dll",
+    "C:\\Windows\\system32\\USP10.dll",
+    "C:\\Windows\\system32\\IPHLPAPI.DLL",
+    "C:\\Windows\\system32\\WINNSI.DLL",
+    "C:\\Windows\\system32\\PSAPI.DLL",
+    "C:\\Windows\\system32\\USERENV.dll",
+    "C:\\Windows\\system32\\profapi.dll",
+    "C:\\Windows\\system32\\CRYPT32.dll",
+    "C:\\Windows\\system32\\MSASN1.dll",
+    "C:\\Windows\\system32\\bcrypt.dll",
+    "C:\\Windows\\system32\\WINMM.dll",
+    "C:\\Windows\\system32\\IMM32.DLL",
+    "C:\\Windows\\system32\\MSCTF.dll",
+    "C:\\Windows\\system32\\api-ms-win-core-synch-l1-2-0.DLL",
+    "C:\\Windows\\system32\\powrprof.dll",
+    "C:\\Windows\\system32\\SETUPAPI.dll",
+    "C:\\Windows\\system32\\CFGMGR32.dll",
+    "C:\\Windows\\system32\\OLEAUT32.dll",
+    "C:\\Windows\\system32\\ole32.dll",
+    "C:\\Windows\\system32\\DEVOBJ.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\System32\\wshtcpip.dll",
+    "C:\\Windows\\System32\\wship6.dll",
+    "C:\\Windows\\system32\\bcryptprimitives.dll",
+    "\\\\?\\C:\\Users\\Administrator\\live-website\\node_modules\\node-sass\\vendor\\win32-x64-72\\binding.node",
+    "C:\\Windows\\system32\\cryptbase.dll",
+    "C:\\Windows\\system32\\dhcpcsvc.DLL",
+    "C:\\Windows\\system32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\wshbth.dll"
+  ]
+}

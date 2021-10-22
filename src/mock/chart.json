@@ -1,0 +1,80 @@
+{
+  "id": 3,
+  "Title": "DEV CHART",
+  "Subtitle": "DO NOT MODIFY",
+  "Description": "This chart is used for development. Please do not modify/delete it.",
+  "published_at": "2021-06-22T00:48:16.787Z",
+  "created_at": "2021-05-20T01:18:47.894Z",
+  "updated_at": "2021-06-23T03:32:00.220Z",
+  "source": "Wigram",
+  "series_comprises": "Loans\nDebt receivables\nBank holdings of gov’t bonds\nBAs and LCs\nTrust loans",
+  "series": [
+    {
+      "id": 2,
+      "chart_series": null,
+      "name": "Test Series 1 from DSI",
+      "colour": "Green",
+      "comprises": "Loans\nDebt receivables\nTrust Loans",
+      "api_path": "v1/dsi/1?size=100"
+    },
+    {
+      "id": 3,
+      "chart_series": null,
+      "name": "Test Series 2 from DSI",
+      "colour": "Black",
+      "comprises": "",
+      "api_path": "v1/dsi/2?size=100"
+    }
+  ],
+  "bands": [
+    {
+      "id": 1,
+      "from_date": "2020-12-01",
+      "to_date": "2021-02-17",
+      "text": "Some band event"
+    }
+  ],
+  "time_markers": [
+    {
+      "id": 1,
+      "date_of_event": "2020-10-30",
+      "text": "EOFY"
+    },
+    {
+      "id": 2,
+      "date_of_event": "2020-08-30",
+      "text": "Test a second event"
+    }
+  ],
+  "Image": {
+    "id": 9,
+    "name": "chart-3.jpeg",
+    "alternativeText": "",
+    "caption": "",
+    "width": 1824,
+    "height": 1218,
+    "formats": {
+      "thumbnail": {
+        "ext": ".jpeg",
+        "url": "https://wigram-web-assets.s3.ap-southeast-2.amazonaws.com/thumbnail_chart_3_982d01ce9d.jpeg",
+        "hash": "thumbnail_chart_3_982d01ce9d",
+        "mime": "image/webp",
+        "name": "thumbnail_chart-3.jpeg",
+        "path": null,
+        "size": 5.9,
+        "width": 234,
+        "height": 156
+      }
+    },
+    "hash": "chart_3_982d01ce9d",
+    "ext": ".jpeg",
+    "mime": "image/webp",
+    "size": 253.19,
+    "url": "https://wigram-web-assets.s3.ap-southeast-2.amazonaws.com/chart_3_982d01ce9d.jpeg",
+    "previewUrl": null,
+    "provider": "aws-s3",
+    "provider_metadata": null,
+    "created_at": "2021-05-20T01:18:45.128Z",
+    "updated_at": "2021-05-20T01:22:56.167Z"
+  }
+}
